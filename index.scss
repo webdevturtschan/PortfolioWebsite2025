@@ -71,6 +71,26 @@ $font-color-dark: #181825;
 }
 
 // GENERAL STYLING
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: $template-color-darkerblue;
+      color: $font-color-bright;
+    }
+  
+    .navbar,
+    footer {
+      background-color: darken($template-color-darkerblue, 5%);
+    }
+  
+    .cta-btn-nav {
+      background-color: rgba($template-color-yellow, 0.85);
+      color: $template-color-darkblue;
+    }
+  
+    a {
+      color: lighten($template-color-yellow, 10%);
+    }
+  }
 *,
 *::before,
 *::after {
