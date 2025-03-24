@@ -29,9 +29,8 @@ Hier findest du meine aktuelle Webentwickler-Website mit Projekten, Skills, Info
 
 ## 🚀 Live-Version
 
-🔗 [Hier klicken und die Website ansehen](https://deinname.github.io/dein-repository-name)
+🔗 [Hier klicken und die Website ansehen](https://webdevturtschan.github.io/PortfolioWebsite2025/)
 
-*(Link funktioniert, sobald GitHub Pages aktiviert ist)*
 
 ---
 
@@ -50,7 +49,7 @@ Für kommerzielle Nutzung bitte vorher kontaktieren.
 
 ## ✉️ Kontakt
 
-📧 Email: turtschan@email.de  
-🌍 Web: [webdev-turtschan.de](https://webdev-turtschan.de) *(optional)*  
+📧 Email: devfreelance-turtschan@gmx.de
+🌍 Tel.Nr: xxx
 📍 Standort: Deutschland (remote verfügbar)
 
