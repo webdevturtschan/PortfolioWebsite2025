@@ -71,26 +71,6 @@ $font-color-dark: #181825;
 }
 
 // GENERAL STYLING
-@media (prefers-color-scheme: dark) {
-    body {
-      background-color: $template-color-darkerblue;
-      color: $font-color-bright;
-    }
-  
-    .navbar,
-    footer {
-      background-color: darken($template-color-darkerblue, 5%);
-    }
-  
-    .cta-btn-nav {
-      background-color: rgba($template-color-yellow, 0.85);
-      color: $template-color-darkblue;
-    }
-  
-    a {
-      color: lighten($template-color-yellow, 10%);
-    }
-  }
 *,
 *::before,
 *::after {
@@ -369,7 +349,49 @@ header {
     align-items: baseline;
     width: 100%;
     gap: 4rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
 }
+
+.center {
+    align-self: center;
+}
+
+//NEW
+.work-values {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0));
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+    .values-heading {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      color: $font-color-dark;
+      margin-bottom: 1rem;
+    }
+  
+    .values-paragraph {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: $font-color-dark;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .quote {
+      font-style: italic;
+      opacity: 0.9;
+      margin-top: 1rem;
+    }
+  }
+
 
 .work-svg-uniques {
     display: flex;
@@ -884,6 +906,7 @@ textarea {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      width: 100%;
   
       h3 {
         font-size: 1rem;
@@ -912,6 +935,7 @@ textarea {
   
       p {
         font-size: 0.9rem;
+        width: 100%;
   
         a {
           color: $template-color-yellow;
@@ -939,10 +963,31 @@ textarea {
   
     .logo-col {
       align-items: center;
+      text-align: center;
   
       img {
         max-width: 4rem;
       }
     }
   }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+
+  
+    a img {
+      width: 1.5rem;
+      height: 1.5rem;
+      filter: brightness(0) invert(1); // Helle Icons auf dunklem BG
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.2);
+        filter: brightness(1) invert(0.7); // Leicht einfärben beim Hover
+      }
+    }
+  }
+  
   

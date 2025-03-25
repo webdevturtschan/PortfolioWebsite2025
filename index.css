@@ -59,23 +59,6 @@
   color: #00154f;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #181825;
-    color: #e6e6f7;
-  }
-  .navbar,
-  footer {
-    background-color: #0e0e16;
-  }
-  .cta-btn-nav {
-    background-color: rgba(227, 162, 12, 0.85);
-    color: #00154f;
-  }
-  a {
-    color: #f4b82e;
-  }
-}
 *,
 *::before,
 *::after {
@@ -334,6 +317,43 @@ header {
   align-items: baseline;
   width: 100%;
   gap: 4rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+}
+
+.center {
+  align-self: center;
+}
+
+.work-values {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.work-values .values-heading {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: #181825;
+  margin-bottom: 1rem;
+}
+.work-values .values-paragraph {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: #181825;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-values .quote {
+  font-style: italic;
+  opacity: 0.9;
+  margin-top: 1rem;
 }
 
 .work-svg-uniques {
@@ -819,6 +839,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 .footer .footer-col h3 {
   font-size: 1rem;
@@ -842,6 +863,7 @@ textarea {
 }
 .footer .footer-col p {
   font-size: 0.9rem;
+  width: 100%;
 }
 .footer .footer-col p a {
   color: #e3a20c;
@@ -863,7 +885,24 @@ textarea {
 }
 .footer .logo-col {
   align-items: center;
+  text-align: center;
 }
 .footer .logo-col img {
   max-width: 4rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.social-links a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.social-links a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0.7);
 }/*# sourceMappingURL=index.css.map */
