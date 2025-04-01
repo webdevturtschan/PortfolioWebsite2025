@@ -29,7 +29,7 @@ $font-color-dark: #181825;
 }
 
 .big-text {
-    font-size: clamp(1.4rem, 4vw, 2.5rem);
+    font-size: clamp(1.4rem, 3vw, 2rem);
 }
 
 .middle-text {
@@ -51,23 +51,62 @@ $font-color-dark: #181825;
 }
 
 .cta-btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: $template-color-whiteblue;
-    border: 2px solid $template-color-yellow;
     padding: .5rem;
-    border-radius: 1rem;
-    font-size: 1rem;
-    border: 2px solid rgba($template-color-yellow, 0.25);
-    background-color: rgba($template-color-yellow, 0.5);
+    border-radius: .1rem;
+    font-size: .9rem;
+    max-height: 1.75rem;
+    background-color: rgba($template-color-yellow, 0.4);
     border-radius: .1rem;
     cursor: pointer;
     box-shadow:
-        0px 4px 15px rgba($template-color-yellow, 0.5),
-        0px 0px 10px rgba($template-color-yellow, 0.8);
+        0px 2px 4px rgba($template-color-yellow, 0.5),
+        0px 0px 6px rgba($template-color-yellow, 0.5);
     transition: all 0.3s ease-in-out;    
 }
 .cta-btn-nav:hover {
-    background-color: rgba($template-color-yellow, 0.8);
+    background-color: rgba($template-color-yellow, 0.5);
     color: $template-color-darkblue;
+}
+
+.display-ld {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .display-sd {
+        display: none;
+    }
+
+    .display-ld {
+        display: block;
+    }
+}
+
+.cta-btn-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+    font-size: .9rem;
+    max-height: 1.75rem;
+}
+
+.display-none-md {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .display-none-sd {
+        display: none;
+    }
 }
 
 // GENERAL STYLING
@@ -108,6 +147,7 @@ img {
     display: block; 
     overflow: hidden;
 }
+
 
 // 5. Listen
 li, ul, ol {
@@ -288,7 +328,10 @@ header {
 }
 
 .hero-text-sd {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .hero-img {
@@ -319,7 +362,10 @@ header {
     }
 
     .hero-text-ld {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .hero-text-sd {
@@ -346,13 +392,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
     width: 100%;
     gap: 4rem;
     background-color: rgba(255, 255, 255, 0.03);
     border-radius: 1rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    padding: 1.5rem;
+    //box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: .5rem;
 }
 
 .center {
@@ -362,10 +408,10 @@ header {
 //NEW
 .work-values {
     background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0));
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 0 1rem;
     text-align: center;
     max-width: 800px;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 0 auto;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   
     .values-heading {
@@ -451,8 +497,6 @@ header {
     background-color: $template-color-darkerblue;
     align-self: center;
     padding: .5rem;
-    border-radius: 1rem;
-    font-size: 1rem;
     border-radius: .1rem;
     box-shadow:
         0px 2px 5px rgba($template-color-darkerblue, 0.5),
