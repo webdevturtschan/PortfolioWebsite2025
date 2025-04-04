@@ -77,38 +77,6 @@ $(document).ready(function () {
     });
 });
 
-//Lightbox-Effekt
-$(document).on("click", ".slider img", function () {
-    const imgSrc = $(this).attr("src");
-
-    $(".lightbox-image").attr("src", imgSrc);
-    $(".lightbox").css({
-        "opacity": "1",
-        "visibility": "visible"
-    });
-
-    $(".overlay").css({
-        "display": "block",
-        "opacity": "0.5"
-    });
-});
-
-// Schließen der Lightbox und Zurücksetzen des Hintergrunds
-$(document).on("click", ".close-btn", function () {
-    $(".lightbox").css({
-        "opacity": "0",
-        "visibility": "hidden"
-    });
-
-    $(".overlay").css({
-        "opacity": "0"
-    });
-
-    setTimeout(() => {
-        $(".overlay").css("display", "none");
-    }, 300); 
-});
-
 
 //Kontakt
 //Formular

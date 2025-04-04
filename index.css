@@ -15,7 +15,7 @@
 }
 
 .section-padding {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 2rem;
 }
 
 .big-text {
@@ -32,6 +32,10 @@
 
 .smaller-text {
   font-size: clamp(0.85rem, 1.75vw, 1.2rem);
+}
+
+.xxxsmall-text {
+  font-size: 0.75rem;
 }
 
 .para-text {
@@ -481,6 +485,8 @@ header {
   color: #e6e6f7;
   border-radius: 0.25rem;
   overflow: hidden;
+  max-width: 15rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -535,51 +541,6 @@ header {
   padding: 0.25rem;
 }
 
-.skills {
-  border-radius: 0.25rem;
-}
-
-.skill-container {
-  width: 100%;
-  font-size: 0.75rem;
-  text-align: right;
-}
-
-.html {
-  width: 85%;
-  background-color: #60b6ec;
-}
-
-.css {
-  width: 80%;
-  background-color: #ec6093;
-}
-
-.js {
-  width: 55%;
-  background-color: #edc160;
-}
-
-.json {
-  width: 50%;
-  background-color: #f77eb0;
-}
-
-.jquery {
-  width: 55%;
-  background-color: #60ec9a;
-}
-
-.sql {
-  width: 20%;
-  background-color: #b4f821;
-}
-
-.php {
-  width: 20%;
-  background-color: #897d7d;
-}
-
 .projects {
   display: flex;
   flex-direction: column;
@@ -611,6 +572,7 @@ header {
 .next-btn {
   position: absolute;
   top: 50%;
+  max-width: 4rem;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -671,43 +633,6 @@ header {
     width: 100%;
   }
 }
-.lightbox {
-  display: flex;
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80%;
-  max-height: 80%;
-  border-radius: 0.25rem;
-  aspect-ratio: 1/1;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.lightbox-image {
-  width: 90%;
-  height: 90%;
-  border-radius: 0.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: default;
-}
-
-.close-btn {
-  position: absolute;
-  top: 1px;
-  right: 10px;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
 .myprojects {
   display: flex;
   flex-direction: column;
@@ -716,30 +641,6 @@ header {
   gap: 1rem;
   width: 100%;
   height: auto;
-}
-
-@media (min-width: 1000px) {
-  .myprojects {
-    flex-direction: row;
-  }
-}
-.project-category {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(227, 162, 12, 0.75);
-  color: #181825;
-  border-radius: 0.25rem;
-  min-width: 14rem;
-  min-height: 4rem;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0px 4px 15px rgba(227, 162, 12, 0.5), 0px 0px 10px rgba(227, 162, 12, 0.8);
-}
-
-.project-category:hover {
-  background-color: rgba(227, 162, 12, 0.9);
 }
 
 .formular {
@@ -807,6 +708,7 @@ textarea {
 .contact-phonenr {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
   width: 100%;
   gap: 1rem;
 }
@@ -837,6 +739,7 @@ textarea {
 .faq-question::after {
   content: "+";
   position: absolute;
+  padding: 1rem;
   right: 0;
   font-size: 1.5rem;
   transition: transform 0.3s ease;
