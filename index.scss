@@ -776,6 +776,14 @@ textarea {
     width: 100%
 }
 
+@media screen and (max-width: 500px) {
+    .submitcontainer {
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+}
+
 .checkbox-label {
     display: flex;
     justify-content: center;
