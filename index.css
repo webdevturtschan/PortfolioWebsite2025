@@ -50,7 +50,7 @@
   justify-content: center;
   text-align: center;
   color: #eaeaf8;
-  padding: 0.5rem;
+  padding: 1.25rem;
   border-radius: 0.1rem;
   font-size: 0.9rem;
   max-height: 1.75rem;
@@ -84,7 +84,7 @@
   align-items: center;
   text-align: center;
   border: none;
-  padding: 0.5rem;
+  padding: 1.25rem;
   border-radius: 1rem;
   font-size: 0.9rem;
   max-height: 1.75rem;
@@ -453,7 +453,7 @@ header {
   color: #e6e6f7;
   background-color: #181825;
   align-self: center;
-  padding: 0.5rem;
+  padding: 1.25rem;
   border-radius: 0.1rem;
   box-shadow: 0px 2px 5px rgba(24, 24, 37, 0.5), 0px 0px 4px rgba(24, 24, 37, 0.8);
   transition: all 0.3s ease-in-out;
@@ -698,6 +698,34 @@ textarea {
 
 .errortext {
   padding-top: 0.5rem;
+}
+
+.submitcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.checkbox-label input {
+  max-width: 1rem;
+}
+.checkbox-label p {
+  white-space: nowrap;
+  align-self: center;
+}
+.checkbox-label a {
+  color: #e6e6f7;
+  text-decoration: underline;
 }
 
 .whatsapp {

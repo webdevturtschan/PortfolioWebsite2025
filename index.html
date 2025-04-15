@@ -178,7 +178,7 @@
     <section id="contact" class="contact section-padding">
         <hr>
         <h2 class="project-padding-big middle-text">Jetzt Kontakt aufnehmen:</h2>
-        <form class="formular">
+        <form class="formular" action="https://formsubmit.co/devfreelance-turtschan@gmx.de" method="POST">
             <div class="flex-form">
                 <div class="flex-col-form">
                     <div class="formcontainer">
@@ -197,9 +197,13 @@
                 <div class="formcontainer">
                     <label for="message">Nachricht: </label>
                     <textarea id="message" name="message" type="text" required></textarea>
-                </div>
+                </div> 
             </div>    
             <div class="submitcontainer">
+                <label class="checkbox-label">
+                    <input type="checkbox" required>
+                    <p>Ich stimme der <a href="/datenschutz.html" target="_blank">Datenschutzerklärung</a> zu.</p>
+                </label>
                 <button class="cta-btn-nav cta-btn-section" id="submit" type="submit">Anfrage absenden!</button>
             </div>
             <div class="whatsapp">
@@ -210,7 +214,6 @@
                 </div>
             </div>    
         </form>
-
     </section>
 
     <section class="faqs section-padding">

@@ -61,7 +61,7 @@ $font-color-dark: #181825;
     justify-content: center;
     text-align: center;
     color: $template-color-whiteblue;
-    padding: .5rem;
+    padding: 1.25rem;
     border-radius: .1rem;
     font-size: .9rem;
     max-height: 1.75rem;
@@ -98,7 +98,7 @@ $font-color-dark: #181825;
     align-items: center;
     text-align: center;
     border: none;
-    padding: .5rem;
+    padding: 1.25rem;
     border-radius: 1rem;
     font-size: .9rem;
     max-height: 1.75rem;
@@ -501,7 +501,7 @@ header {
     color: $font-color-bright;
     background-color: $template-color-darkerblue;
     align-self: center;
-    padding: .5rem;
+    padding: 1.25rem;
     border-radius: .1rem;
     box-shadow:
         0px 2px 5px rgba($template-color-darkerblue, 0.5),
@@ -765,6 +765,37 @@ textarea {
 
 .errortext {
     padding-top: .5rem;
+}
+
+.submitcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%
+}
+
+.checkbox-label {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: .5rem;
+    font-size: 0.9rem;
+
+    input {
+        max-width: 1rem;
+    }
+
+    p {
+        white-space: nowrap;
+        align-self: center;
+    }
+
+    a {
+      color: $font-color-bright;
+      text-decoration: underline;
+    }
 }
 
 .whatsapp {
