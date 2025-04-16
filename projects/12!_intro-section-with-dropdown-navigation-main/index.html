@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css"><!-- Verlinkung deiner CSS-Datei -->
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="#"><img src="images/logo.svg" alt="firmenlogo"></a>
+      <div class="navbar hideonmobile">
+        <div class="btn-group">
+          <button class="hovernavbar dropbtn btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Features
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-todo.svg" alt="todo-logo">ToDo List</a></li>
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-calendar.svg" alt="calendar-logo">Calendar</a></li>
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-reminders.svg" alt="reminders-logo">  Reminders</a></li>
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-planning.svg" alt="planing-logo">Planning</a></li>
+          </ul>
+        </div>
+        <div class="navmargin btn-group">
+          <button class="hovernavbar dropbtn btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Company
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">History</a></li>
+            <li><a class="dropdown-item" href="#">Our Team</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+        </div>
+        <button class="hovernavbar dropbtn navmargin btn btn-sm btn-outline-secondary" type="button">Careers</button>
+        <button class="hovernavbar dropbtn navmargin btn btn-sm btn-outline-secondary" type="button">About</button>
+      </div>
+      <div class="header-log hideonmobile">
+        <button class="hovernavbar dropbtn btn btn-sm btn-outline-secondary" type="button">Login</button>
+        <button class="hovernavbar registerbtn btn btn-sm btn-outline-secondary" type="button">Register</button>  
+      </div>  
+      <li onclick=showSidebar()  class="hamburger"><a href="#"><img src="images/hamburger.svg" alt="Hamburgermenue Icon"></a></li>
+      <div class="sidebar">
+        <li onclick=hideSidebar()  class="kreuz"><a href="#"><img src="images/kreuz.svg" alt="Kreuz Icon"></a></li>
+        <div class="btn-group">
+          <button class="hovernavbar dropbtn btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Features
+          </button>
+          <ul class="zero sidebar-margin dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-todo.svg" alt="todo-logo">ToDo List</a></li>
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-calendar.svg" alt="calendar-logo">Calendar</a></li>
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-reminders.svg" alt="reminders-logo">  Reminders</a></li>
+            <li><a class="dropdown-item" href="#"><img class="header-icon" src="images/icon-planning.svg" alt="planing-logo">Planning</a></li>
+          </ul>
+        </div>
+        <div class="zero sidebar-margin navmargin btn-group">
+          <button class="hovernavbar dropbtn btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Company
+          </button>
+          <ul class="zero dropdown-menu">
+            <li><a class="dropdown-item" href="#">History</a></li>
+            <li><a class="dropdown-item" href="#">Our Team</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="nomargpad sidebar-margin ">
+         <button class="nomargpad hovernavbar dropbtn navmargin btn btn-sm btn-outline-secondary" type="button">Careers</button>
+        </div>
+        <div class="nomargpad sidebar-margin ">
+          <button class="nomargpad hovernavbar dropbtn navmargin btn btn-sm btn-outline-secondary" type="button">About</button>
+        </div>
+        <div class="nomargpad header-log">
+          <button class="hovernavbar dropbtn btn btn-sm btn-outline-secondary" type="button">Login</button>
+          <button class="hovernavbar registerbtn btn btn-sm btn-outline-secondary" type="button">Register</button>  
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="page-content">
+    <div class="grid-container">
+      <div class="mainmessage">
+        <h1 class="mainheading">Make remote work</h1>
+      </div>
+      <div class="mainimage">
+        <img class="desktop-photo"src="images/image-hero-desktop.png" alt="schematisches-Foto">
+        <img class="mobile-photo" src="images/image-hero-mobile.png" alt="schematischesFoto auf Handy">
+      </div>
+      <div class="description">
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      </div>
+      <div class="ctacontainer">
+        <button class="cta btn btn-sm btn-outline-secondary">Learn more</button>
+      </div>
+      <div class="client-logos">
+        <a href="#"><img src="images/client-audiophile.svg" alt="audiophile-logo"></a>
+        <a href="#"><img src="images/client-databiz.svg" alt="databiz-logo"></a>
+        <a href="#"><img src="images/client-meet.svg" alt="meet-logo"></a>
+        <a href="#"><img src="images/client-maker.svg" alt="maker-logo"></a>
+      </div>  
+    </div>
+  </section>
+  <script type="text/javascript" src="lib/jquery-3.3.7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+

@@ -83,7 +83,7 @@ $(document).ready(function () {
 const form = document.querySelector("form");
 const firstname = document.getElementById("firstname");
 const lastname = document.getElementById("lastname");
-const button = document.getElementById("submit");
+const button = document.getElementById("submit-btn");
 
 function disableButton() {
     const button = document.getElementById("submit");
@@ -96,7 +96,7 @@ function disableButton() {
 }
 
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit-btn", (e) => {
     e.preventDefault();
     
     disableButton(); 

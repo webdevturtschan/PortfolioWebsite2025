@@ -681,6 +681,40 @@ header {
     transition: transform 0.5s ease-in-out;
 }
 
+.slider a {
+    width: calc((100% / 3) - 0.1rem);
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    display: block;
+    overflow: hidden;
+}
+.slider a {
+    width: calc((100% / 3) - 0.1rem);
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    display: block;
+    overflow: hidden;
+  }
+  
+.slider a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+  
+.slider a:hover img {
+    transform: scale(1.03);
+}
+  
+  @media (max-width: 768px) {
+    .slider a {
+      width: 100%;
+    }
+}
+
 .slider img {
     width: calc((100% / 3) - 0.1rem);
     flex-shrink: 0;
